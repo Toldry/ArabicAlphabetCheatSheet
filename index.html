@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arabic Alphabet</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            overflow-x: auto;
+        }
+        table {
+            border-collapse: collapse;
+            width: auto;
+            margin: 20px 0;
+            min-width: 600px;
+            direction: ltr;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        .arabic-text {
+            font-size: 220%;
+            font-family: "Traditional Arabic", "Arial Unicode MS", sans-serif;
+        }
+        .ipa {
+            font-family: "Charis SIL", "Doulos SIL", "Arial Unicode MS", sans-serif;
+        }
+        .example {
+            text-align: center;
+        }
+        /* Column widths */
+        th:nth-child(1), td:nth-child(1) { /* Letter name in IPA */
+            width: 8%;
+        }
+        th:nth-child(2), td:nth-child(2) { /* Letter name in Arabic script */
+            width: 8%;
+        }
+        th:nth-child(3), td:nth-child(3) { /* English Example */
+            width: 12%;
+        }
+        th:nth-child(4), td:nth-child(4), /* Final */
+        th:nth-child(5), td:nth-child(5), /* Medial */
+        th:nth-child(6), td:nth-child(6) { /* Initial */
+            width: 8%;
+        }
+        th:nth-child(7), td:nth-child(7) { /* Isolated form */
+            width: 8%;
+        }
+        th:nth-child(8), td:nth-child(8) { /* Hija'i Order */
+            width: 5%;
+        }
+    </style>
+    <!-- Favicon settings -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='350' height='350' viewBox='0 0 350 350'%3E%3Crect width='100%25' height='100%25' fill='%23ff0000'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' fill='white' font-size='300' font-family='Arial'%3Eع%3C/text%3E%3C/svg%3E">
+    <link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='350' height='350' viewBox='0 0 350 350'%3E%3Crect width='100%25' height='100%25' fill='%23ff0000'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' fill='white' font-size='300' font-family='Arial'%3Eع%3C/text%3E%3C/svg%3E">
+    <meta name="theme-color" content="#ff0000">
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th rowspan="2">Letter name in IPA</th>
+                <th rowspan="2">Letter name in Arabic script</th>
+                <th rowspan="2">English Example</th>
+                <th colspan="3">Contextual forms</th>
+                <th rowspan="2">Isolated form</th>
+                <th rowspan="2">Hija'i Order</th>
+            </tr>
+            <tr>
+                <th>Final</th>
+                <th>Medial</th>
+                <th>Initial</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>ʔalif</td>
+                <td class="arabic-text">أَلِف</td>
+                <td class="example"><b>uh</b>-oh</td>
+                <td colspan="2" class="arabic-text">ـا</td>
+                <td colspan="2" class="arabic-text">ا</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>baːʔ</td>
+                <td class="arabic-text">بَاء</td>
+                <td class="example"><b>b</b>ed</td>
+                <td class="arabic-text">ـب</td>
+                <td class="arabic-text">ـبـ</td>
+                <td class="arabic-text">بـ</td>
+                <td class="arabic-text">ب</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>taːʔ</td>
+                <td class="arabic-text">تَاء</td>
+                <td class="example"><b>t</b>op</td>
+                <td class="arabic-text">ـت</td>
+                <td class="arabic-text">ـتـ</td>
+                <td class="arabic-text">تـ</td>
+                <td class="arabic-text">ت</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>θaːʔ</td>
+                <td class="arabic-text">ثَاء</td>
+                <td class="example"><b>th</b>ink</td>
+                <td class="arabic-text">ـث</td>
+                <td class="arabic-text">ـثـ</td>
+                <td class="arabic-text">ثـ</td>
+                <td class="arabic-text">ث</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>d͡ʒiːm</td>
+                <td class="arabic-text">جِيم</td>
+                <td class="example"><b>j</b>am</td>
+                <td class="arabic-text">ـج</td>
+                <td class="arabic-text">ـجـ</td>
+                <td class="arabic-text">جـ</td>
+                <td class="arabic-text">ج</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>ħaːʔ</td>
+                <td class="arabic-text">حَاء</td>
+                <td class="example">lo<b>ch</b></td>
+                <td class="arabic-text">ـح</td>
+                <td class="arabic-text">ـحـ</td>
+                <td class="arabic-text">حـ</td>
+                <td class="arabic-text">ح</td>
+                <td>6</td>
+            </tr>
+            <tr>
+                <td>xaːʔ</td>
+                <td class="arabic-text">خَاء</td>
+                <td class="example">ba<b>ch</b></td>
+                <td class="arabic-text">ـخ</td>
+                <td class="arabic-text">ـخـ</td>
+                <td class="arabic-text">خـ</td>
+                <td class="arabic-text">خ</td>
+                <td>7</td>
+            </tr>
+            <tr>
+                <td>daːl</td>
+                <td class="arabic-text">دَال</td>
+                <td class="example"><b>d</b>og</td>
+                <td colspan="2" class="arabic-text">ـد</td>
+                <td colspan="2" class="arabic-text">د</td>
+                <td>8</td>
+            </tr>
+            <tr>
+                <td>ðaːl</td>
+                <td class="arabic-text">ذَال</td>
+                <td class="example"><b>th</b>is</td>
+                <td colspan="2" class="arabic-text">ـذ</td>
+                <td colspan="2" class="arabic-text">ذ</td>
+                <td>9</td>
+            </tr>
+            <tr>
+                <td>raːʔ</td>
+                <td class="arabic-text">رَاء</td>
+                <td class="example"><b>r</b>ed</td>
+                <td colspan="2" class="arabic-text">ـر</td>
+                <td colspan="2" class="arabic-text">ر</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td>zaːj</td>
+                <td class="arabic-text">زَاي</td>
+                <td class="example"><b>z</b>oo</td>
+                <td colspan="2" class="arabic-text">ـز</td>
+                <td colspan="2" class="arabic-text">ز</td>
+                <td>11</td>
+            </tr>
+            <tr>
+                <td>siːn</td>
+                <td class="arabic-text">سِين</td>
+                <td class="example"><b>s</b>un</td>
+                <td class="arabic-text">ـس</td>
+                <td class="arabic-text">ـسـ</td>
+                <td class="arabic-text">سـ</td>
+                <td class="arabic-text">س</td>
+                <td>12</td>
+            </tr>
+            <tr>
+                <td>ʃiːn</td>
+                <td class="arabic-text">شِين</td>
+                <td class="example"><b>sh</b>ip</td>
+                <td class="arabic-text">ـش</td>
+                <td class="arabic-text">ـشـ</td>
+                <td class="arabic-text">شـ</td>
+                <td class="arabic-text">ش</td>
+                <td>13</td>
+            </tr>
+            <tr>
+                <td>sˤaːd</td>
+                <td class="arabic-text">صَاد</td>
+                <td class="example"><b>s</b>un</td>
+                <td class="arabic-text">ـص</td>
+                <td class="arabic-text">ـصـ</td>
+                <td class="arabic-text">صـ</td>
+                <td class="arabic-text">ص</td>
+                <td>14</td>
+            </tr>
+            <tr>
+                <td>dˤaːd</td>
+                <td class="arabic-text">ضَاد</td>
+                <td class="example"><b>d</b>og</td>
+                <td class="arabic-text">ـض</td>
+                <td class="arabic-text">ـضـ</td>
+                <td class="arabic-text">ضـ</td>
+                <td class="arabic-text">ض</td>
+                <td>15</td>
+            </tr>
+            <tr>
+                <td>tˤaːʔ</td>
+                <td class="arabic-text">طَاء</td>
+                <td class="example"><b>t</b>op</td>
+                <td class="arabic-text">ـط</td>
+                <td class="arabic-text">ـطـ</td>
+                <td class="arabic-text">طـ</td>
+                <td class="arabic-text">ط</td>
+                <td>16</td>
+            </tr>
+            <tr>
+                <td>ðˤaːʔ</td>
+                <td class="arabic-text">ظَاء</td>
+                <td class="example"><b>th</b>is</td>
+                <td class="arabic-text">ـظ</td>
+                <td class="arabic-text">ـظـ</td>
+                <td class="arabic-text">ظـ</td>
+                <td class="arabic-text">ظ</td>
+                <td>17</td>
+            </tr>
+            <tr>
+                <td>ʕajn</td>
+                <td class="arabic-text">عَيْن</td>
+                <td class="example">lo<b>ch</b></td>
+                <td class="arabic-text">ـع</td>
+                <td class="arabic-text">ـعـ</td>
+                <td class="arabic-text">عـ</td>
+                <td class="arabic-text">ع</td>
+                <td>18</td>
+            </tr>
+            <tr>
+                <td>ɣajn</td>
+                <td class="arabic-text">غَيْن</td>
+                <td class="example">ba<b>ch</b></td>
+                <td class="arabic-text">ـغ</td>
+                <td class="arabic-text">ـغـ</td>
+                <td class="arabic-text">غـ</td>
+                <td class="arabic-text">غ</td>
+                <td>19</td>
+            </tr>
+            <tr>
+                <td>faːʔ</td>
+                <td class="arabic-text">فَاء</td>
+                <td class="example"><b>f</b>ish</td>
+                <td class="arabic-text">ـف</td>
+                <td class="arabic-text">ـفـ</td>
+                <td class="arabic-text">فـ</td>
+                <td class="arabic-text">ف</td>
+                <td>20</td>
+            </tr>
+            <tr>
+                <td>qaːf</td>
+                <td class="arabic-text">قَاف</td>
+                <td class="example"><b>c</b>at</td>
+                <td class="arabic-text">ـق</td>
+                <td class="arabic-text">ـقـ</td>
+                <td class="arabic-text">قـ</td>
+                <td class="arabic-text">ق</td>
+                <td>21</td>
+            </tr>
+            <tr>
+                <td>kaːf</td>
+                <td class="arabic-text">كَاف</td>
+                <td class="example"><b>k</b>ey</td>
+                <td class="arabic-text">ـك</td>
+                <td class="arabic-text">ـكـ</td>
+                <td class="arabic-text">كـ</td>
+                <td class="arabic-text">ك</td>
+                <td>22</td>
+            </tr>
+            <tr>
+                <td>laːm</td>
+                <td class="arabic-text">لاَم</td>
+                <td class="example"><b>l</b>ight</td>
+                <td class="arabic-text">ـل</td>
+                <td class="arabic-text">ـلـ</td>
+                <td class="arabic-text">لـ</td>
+                <td class="arabic-text">ل</td>
+                <td>23</td>
+            </tr>
+            <tr>
+                <td>miːm</td>
+                <td class="arabic-text">مِيم</td>
+                <td class="example"><b>m</b>oon</td>
+                <td class="arabic-text">ـم</td>
+                <td class="arabic-text">ـمـ</td>
+                <td class="arabic-text">مـ</td>
+                <td class="arabic-text">م</td>
+                <td>24</td>
+            </tr>
+            <tr>
+                <td>nuːn</td>
+                <td class="arabic-text">نُون</td>
+                <td class="example"><b>n</b>ight</td>
+                <td class="arabic-text">ـن</td>
+                <td class="arabic-text">ـنـ</td>
+                <td class="arabic-text">نـ</td>
+                <td class="arabic-text">ن</td>
+                <td>25</td>
+            </tr>
+            <tr>
+                <td>haːʔ</td>
+                <td class="arabic-text">هَاء</td>
+                <td class="example"><b>h</b>at</td>
+                <td class="arabic-text">ـه</td>
+                <td class="arabic-text">ـهـ</td>
+                <td class="arabic-text">هـ</td>
+                <td class="arabic-text">ه</td>
+                <td>26</td>
+            </tr>
+            <tr>
+                <td>waːw</td>
+                <td class="arabic-text">وَاو</td>
+                <td class="example"><b>w</b>ater</td>
+                <td colspan="2" class="arabic-text">ـو</td>
+                <td colspan="2" class="arabic-text">و</td>
+                <td>27</td>
+            </tr>
+            <tr>
+                <td>jaːʔ</td>
+                <td class="arabic-text">يَاء</td>
+                <td class="example"><b>y</b>es</td>
+                <td class="arabic-text">ـي</td>
+                <td class="arabic-text">ـيـ</td>
+                <td class="arabic-text">يـ</td>
+                <td class="arabic-text">ي</td>
+                <td>28</td>
+            </tr>
+            <tr>
+                <td>paːʔ</td>
+                <td class="arabic-text">پَاء</td>
+                <td class="example"><b>p</b>en</td>
+                <td class="arabic-text">ـپ</td>
+                <td class="arabic-text">ـپـ</td>
+                <td class="arabic-text">پـ</td>
+                <td class="arabic-text">پ</td>
+                <td>-</td>
+            </tr>
+            <tr>
+                <td>vaːʔ</td>
+                <td class="arabic-text">ڤَاء</td>
+                <td class="example"><b>v</b>an</td>
+                <td class="arabic-text">ـڤ</td>
+                <td class="arabic-text">ـڤـ</td>
+                <td class="arabic-text">ڤـ</td>
+                <td class="arabic-text">ڤ</td>
+                <td>-</td>
+            </tr>
+            <tr>
+                <td>hamza(h)</td>
+                <td class="arabic-text">هَمْزة</td>
+                <td class="example"><b>uh</b>-oh</td>
+                <td colspan="4" class="arabic-text">ء</td>
+                <td>-</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html> 
